@@ -33,7 +33,7 @@ void characterBase::attack(characterBase& target) {
 }
 
 void characterBase::showStats() {
-	std::cout << "Can: " << Health << std::endl;
-	std::cout << "Zirh: " << Armor << std::endl;
-	std::cout << "Hasar: " << Damage << std::endl;
+	std::cout << "  Can: " << Health << std::endl;
+	std::cout << "  Zirh: " << Armor << std::endl;
+	std::cout << "  Hasar: " << Damage << std::endl;
 }
