@@ -1,3 +1,4 @@
+#pragma once
 #include"characterbase.h"
 #include<string>
 
@@ -6,7 +7,6 @@
 //=========================================================
 class Player : public characterBase {
 public:
-	std::string name;
 	Player() {
 		maxHealth=200;
 		maxArmor=200;
@@ -23,6 +23,7 @@ public:
 class Stilar : public characterBase{
 public:
 	Stilar() {
+		Name = "Stilar";
 		maxHealth = 50;
 		maxArmor = 0;
 		Health = 50;

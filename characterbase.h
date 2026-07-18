@@ -1,7 +1,9 @@
 #pragma once
- 
+#include<string>
+
 class characterBase {
 public:
+	std::string Name;
 	int maxHealth=200;
 	int maxArmor=200;
 	int Health=100;
@@ -10,7 +12,7 @@ public:
 
 	void takeDamage(int enemyDamage);
 	void attack(characterBase& target);
-	void showStats();
+	void showStats()  const;
 private:
 
 };

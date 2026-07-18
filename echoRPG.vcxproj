@@ -139,10 +139,12 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="battle.cpp" />
     <ClCompile Include="characterbase.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="battle.h" />
     <ClInclude Include="characterbase.h" />
     <ClInclude Include="characters.h" />
   </ItemGroup>

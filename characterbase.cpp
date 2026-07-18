@@ -32,7 +32,7 @@ void characterBase::attack(characterBase& target) {
 	target.takeDamage(Damage);
 }
 
-void characterBase::showStats() {
+void characterBase::showStats()  const {
 	std::cout << "  Can: " << Health << std::endl;
 	std::cout << "  Zirh: " << Armor << std::endl;
 	std::cout << "  Hasar: " << Damage << std::endl;
