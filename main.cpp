@@ -15,17 +15,10 @@ int main(){
 
     Stilar stilar;
     Battle battle;
-    bool running = true;
-    while (running) {
+    bool runing = true;
+    while (runing) {
         battle.runBattle(player1, stilar);
-        if (stilar.Health <= 0) {
-            std::cout << "\nKAZANDIN.\n";
-            running = false;
-        }
-        if (player1.Health <= 0) {
-            std::cout << "\nKAYBETTIN.\n";
-            running = false;
-        }
+        battle.isaLive(player1, stilar, runing);
     }
 
     return 0;

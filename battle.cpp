@@ -33,3 +33,15 @@ void Battle::runBattle(Player& player, characterBase& enemy) {
     std::cout << player.Name << " degerleri=\n";
     player.showStats();
 }
+
+void Battle::isaLive(Player& player, characterBase& enemy, bool& runing) {
+    if (enemy.Health <= 0) {
+        std::cout << "\nKAZANDIN.\n";
+        player.showStats();
+        runing = false;
+    }
+    if (player.Health <= 0) {
+        std::cout << "\nKAYBETTIN.\n";
+        runing = false;
+    }
+}
